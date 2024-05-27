@@ -8,4 +8,4 @@ on:
 
 jobs:
   publish:
-    uses: evolianka/workflows/npm/publish-package.yml@main
+    uses: evolianka/workflows/.github/workflows/npm/publish-package.yml@main
