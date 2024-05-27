@@ -1,0 +1,132 @@
+{
+  "name": "@evolianka-libs/eslint-plugin-evolianka",
+  "version": "0.0.07",
+  "description": "Evolianka eslint plugin for develop",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "evolianka",
+  "main": "lib/index.js",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "init": "npm run clean && npm i",
+    "build": "rm -rf ./dist && mkdir ./dist && cp -r ./lib/* ./dist",
+    "pack": "npm pack --pack-destination=./dist",
+    "clean": "npm run clean:node-modules && npm run clean:dist",
+    "clean:node-modules": "rm -rf node_modules",
+    "clean:dist": "rm -rf dist",
+    "clean:tgz": "rm -rf dist/*.tgz"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-perfectionist": "^2.4.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "eslint-plugin-testing-library": "^6.2.0",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "prettier": "^3.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "18.4.3",
+    "@commitlint/config-conventional": "18.4.3",
+    "@typescript-eslint/eslint-plugin": "6.12.0",
+    "dotenv": "16.3.1",
+    "dotenv-cli": "7.3.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-doc-generator": "^1.6.1",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-eslint-plugin": "^5.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-perfectionist": "^2.4.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "eslint-plugin-testing-library": "^6.2.0",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "^3.1.0",
+  },
+  "engines": {
+    "node": "20.12.2"
+  },
+  "license": "ISC",
+  "config": {
+    "save-exact": true
+  },
+  "publishConfig": {
+    "@Evolianka:registry": "https://npm.pkg.github.com"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": false
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": false
+    },
+    "@typescript-eslint/parser": {
+      "optional": false
+    },
+    "eslint-config-prettier": {
+      "optional": false
+    },
+    "eslint-import-resolver-typescript": {
+      "optional": false
+    },
+    "eslint-plugin-import": {
+      "optional": false
+    },
+    "eslint-plugin-jsx-a11y": {
+      "optional": false
+    },
+    "eslint-plugin-prettier": {
+      "optional": false
+    },
+    "eslint-plugin-promise": {
+      "optional": false
+    },
+    "eslint-plugin-react": {
+      "optional": false
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": false
+    },
+    "eslint-plugin-simple-import-sort": {
+      "optional": false
+    },
+    "eslint-plugin-sonarjs": {
+      "optional": false
+    },
+    "eslint-plugin-storybook": {
+      "optional": false
+    },
+    "eslint-plugin-testing-library": {
+      "optional": false
+    },
+    "eslint-plugin-unicorn": {
+      "optional": false
+    },
+    "eslint-plugin-perfectionist": {
+      "optional": false
+    },
+    "prettier": {
+      "optional": false
+    }
+  }
+}
