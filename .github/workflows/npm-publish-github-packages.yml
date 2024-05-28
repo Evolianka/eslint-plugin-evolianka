@@ -8,4 +8,7 @@ on:
 
 jobs:
   publish:
+    permissions:
+      contents: read
+      packages: write
     uses: evolianka/workflows/.github/workflows/publish-package.yml@main
